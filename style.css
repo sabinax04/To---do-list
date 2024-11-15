@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  width: 350px;
+  height: auto;
+}
+
+.nav {
+  background-color: #ffdc40;
+  height: 30px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+  padding-bottom: 30px;
+}
+
+.input {
+  width: 286px;
+  height: 40px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 50px;
+  outline: none;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #c4c4c4;
+  cursor: pointer;
+  padding-right: 8px;
+  font-size: 18px;
+}
+
+.change-button {
+  background-color: transparent;
+  border: none;
+  width: 27px;
+  height: 13px;
+  color: #c4c4c4;
+  font-size: 20px;
+  margin-left: 70%;
+  cursor: pointer;
+}
+
+.plus-add-button {
+  display: flex;
+}
+
+.btn-2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 150px;
+  height: 42px;
+  border: none;
+  border-radius: 71px;
+  background-color: #833ae0;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 55px;
+  cursor: pointer;
+}
+
+.btn-1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: #9953f1;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+.input-icon {
+  display: inline-block;
+  position: relative;
+  width: 286px;
+} 
+
+
+.list {
+  margin-top: 10px;
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list li {
+  list-style: none;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
