@@ -19,6 +19,7 @@ body {
   border-radius: 10px;
   width: 350px;
   height: auto;
+  overflow: hidden;
 }
 
 .nav {
@@ -40,14 +41,18 @@ body {
 }
 
 .input {
-  width: 286px;
-  height: 40px;
+  width: 300px;
+  min-height: 40px;
+  height: auto;
   border: 1px solid #c4c4c4;
   border-radius: 10px;
   position: relative;
   padding-left: 10px;
-  padding-right: 50px;
+  padding-right: 40px;
   outline: none;
+  resize: vertical;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }
 
 .icon {
@@ -58,11 +63,11 @@ body {
   color: #c4c4c4;
   cursor: pointer;
   padding-right: 8px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .change-button {
-  background-color: transparent;
+  background: transparent;
   border: none;
   width: 27px;
   height: 13px;
@@ -111,27 +116,56 @@ body {
 }
 
 .input-icon {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   position: relative;
-  width: 286px;
-} 
-
+  width: 300px;
+}
 
 .list {
   margin-top: 10px;
-  width: 100%;
+  width: 300px;
   padding-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  border: 1px solid #c4c4c4;
+  display: none;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .list li {
   list-style: none;
-  background-color: transparent;
+  background: transparent;
   padding: 8px;
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+  word-break: break-word;
+}
+
+.list li span {
+  flex: 1;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.remove-icon {
+  color: #c4c4c4;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.remove-icon:hover {
+  background-color: #833ae0;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
 }
